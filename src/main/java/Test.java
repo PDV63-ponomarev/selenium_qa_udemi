@@ -1,4 +1,6 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Test {
@@ -8,6 +10,10 @@ public class Test {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://google.com");
+
+        WebElement input = driver.findElement(
+                By.cssSelector(".truncate")
+        );
 
     }
 }
