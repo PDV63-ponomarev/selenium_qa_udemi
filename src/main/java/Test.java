@@ -15,5 +15,8 @@ public class Test {
                 By.cssSelector(".truncate")
         );
 
+        WebElement input2 = driver.findElement(
+                By.xpath("//*[@class=\"truncate\"]")
+        );
     }
 }
