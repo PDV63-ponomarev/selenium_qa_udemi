@@ -22,5 +22,15 @@ public class Test {
         WebElement input3 = driver.findElement(
                 By.className("truncate")
         );
+
+
+//        Неявное ожидание
+//        ожидание на поиск
+        driver.manage().timeout().implicitlyWait(10, TimeUit.SECONDS);
+//        время на загрузку страницы
+        driver.manage().timeout().pageLoadTimeout(10, TimeUit.SECONDS);
+//        ожидания завершения выполнения асинхронного скрипта
+        driver.manage().timeout().setScriptTimeout(10, TimeUit.SECONDS);
+
     }
 }
