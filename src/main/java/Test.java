@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,11 +37,18 @@ public class Test {
 //        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
 
 
+       By input = By.xpath("//*[@class=\"truncate\"]");
+       WebElement element = driver.findElement(input);
 
 //      Клик
 //        WebElement element = driver.findElement(By.id("qwe"));
 //        element.click();
 
+
+//        ввод текста и нажатие ентер
+        element.sendKeys("автомобили", Keys.ENTER);
+//        вложить файл
+        element.sendKeys("C://packege/file.txt", Keys.ENTER);
 
 
     }
