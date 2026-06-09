@@ -51,5 +51,8 @@ public class Test {
         element.sendKeys("C://packege/file.txt", Keys.ENTER);
 
 
+        // получение текста
+        String name = element.getText();
+
     }
 }
