@@ -37,8 +37,8 @@ public class Test {
 //        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
 
 
-       By input = By.xpath("//*[@class=\"truncate\"]");
-       WebElement element = driver.findElement(input);
+//       By input = By.xpath("//*[@class=\"truncate\"]");
+//       WebElement element = driver.findElement(input);
 
 //      Клик
 //        WebElement element = driver.findElement(By.id("qwe"));
@@ -46,13 +46,21 @@ public class Test {
 
 
 //        ввод текста и нажатие ентер
-        element.sendKeys("автомобили", Keys.ENTER);
+//        element.sendKeys("автомобили", Keys.ENTER);
 //        вложить файл
-        element.sendKeys("C://packege/file.txt", Keys.ENTER);
+//        element.sendKeys("C://packege/file.txt", Keys.ENTER);
+//
+//
+//        // получение текста
+//        String name = element.getText();
 
+//        свойства элемента
+        By img = By.xpath("//svg[@aria-label='Google']");
 
-        // получение текста
-        String name = element.getText();
+        WebElement element = driver.findElement(img);
+
+        System.out.println(element.getAttribute("src"));
+
 
     }
 }
