@@ -29,13 +29,19 @@ public class Test {
 
 //        Неявное ожидание
 //        ожидание на поиск
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//        время на загрузку страницы
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-//        ожидания завершения выполнения асинхронного скрипта
-        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//      время на загрузку страницы
+//        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+//       ожидания завершения выполнения асинхронного скрипта
+//        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
 
 
-//
+
+//      Клик
+//        WebElement element = driver.findElement(By.id("qwe"));
+//        element.click();
+
+
+
     }
 }
